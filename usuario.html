@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root{/*:root es un selector de pseudoclase que coincide con el elemento raíz del documento, generalmente el htmlelemento. Al crear sus variables en :root, estarán disponibles globalmente y se podrá acceder a ellas desde cualquier otro selector en la hoja de estilo.*/
+            --padding-container: 100px 0px;
+            --color-title: #001A49;
+        }
+
+        input[type=button], input[type=submit]{
+            background-color: white;
+            border: none;
+            color: black;
+            font-weight: bold;
+            padding: 6px 20px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 4px;
+            box-shadow: 3px 3px 3px black;
+            position: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        a{
+            background-color: white;
+            border: none;
+            color: black;
+            font-weight: bold;
+            padding: 6px 20px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 4px;
+            box-shadow: 3px 3px 3px black;
+            position: center;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+
+        input[type="text"]{
+            font-family: 'Poppins', sans-serif;
+            color: black;
+            background-color: white;
+            padding: 4px;
+            text-align: left;
+            font-size: 16px;
+            margin: 4px 4px;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('./images/edif1.jpg') no-repeat center top;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        label{
+            font-family: 'Poppins', sans-serif;
+            padding: 4px;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            align-self: center;
+            font-size: 18px;
+        }
+
+        table{
+            background-color: white;
+            padding: 5px 5px;
+        }
+
+        td{
+            padding: 12px 6px;
+        }
+
+        @media (max-width: 550px){
+            table{
+
+                background-color: white;
+                padding: 20px 20px;
+            }
+            td{
+                padding: 6px 2px;
+            }
+            a{
+                padding: 6px 10px;
+                font-size: 10px;
+                margin: 2px 2px;
+            }
+        }
+
+        @media (max-width: 450px){
+            table{
+
+                background-color: white;
+                padding: 20px 20px;
+            }
+            td{
+            padding: 4px 1px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <center>
+        <form name="EdificioSanAntonio">
+            <table border="1">
+                <tr>
+                    <td colspan="6"><label>Edificio San Antonio</label></td>
+                </tr>
+                <tr>
+                    <td><label>Apartamento</label></td><td><label>1</label></td>
+                    <td><label>Solvente</label></td><td><label>El usuario se encuentra solvente</label></td>
+                </tr>
+                <tr>
+                    <td><label>Nombre</label></td><td><label>Daniel Crimaldi</label></td>
+                    <td><label>Deuda</label></td><td><label>Sin Deudas</label></td>
+                </tr>
+                <tr>
+                    <td><label>Teléfono</label></td><td><label>0414-3147092</label></td>
+                    <td><label>Intereses</label></td><td><label>Sin Intereses</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="6" align="center">
+                        <a href="./iniciosesion.html">Salir</a>
+                    </td>
+                </tr>
+
+                
+            </table>
+        </form>
+    </center>
+</body>
+</html>
